@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    font: normal;
+    background-image: none, url(../Imagenes/fondo_oscuro.jpg);
+}
+
+.header{
+    background: rgba(255, 255, 0, 0.86);
+    width: 100vw;
+    padding-bottom: 0%;
+    text-align: center;
+    height: 15%;
+    line-height: 25px;
+}
+
+.logo{
+    margin-top: 3px;
+    margin-left: 2px;
+    display: flex;
+    width: auto;
+    max-height: 100%;
+}
+
+.menu {
+    display: flex;
+    background-color: black;
+    height: 120px;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+
+}
+
+
+/* Estilos para la lista de elementos del menú */
+.menu ul {
+    list-style: none; /* Quitamos los puntos de la lista */
+    display: flex; /* Utilizamos flexbox para alinear los elementos horizontalmente */
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: flex;
+    padding: 25px 10px; /* Espaciado vertical dentro de cada elemento */
+    list-style: none;
+    align-items: center; /* Alinea verticalmente el contenido del elemento */
+    line-height: 100px; /* Centra verticalmente el contenido del elemento */
+}
+
+.menu a {
+    color: white; /* Color del texto */
+    text-decoration: none; /* Sin subrayado en los enlaces */
+    margin-left: 20px; /* Espaciado entre elementos */ 
+}
+
+.menu a:hover { color: yellow;} /* Cambia el color del texto al pasar el cursor por encima */
+
+.fix{
+    clear: both; /* Limpia los floats */
+}
+
+.envios{
+    border: 1px solid black;
+}
+
+footer{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: white;
+    padding: 5px 0px;
+    bottom: 0; /* Alinea el footer en la parte inferior */
+    width: 100%; /* Ancho del footer igual al 100% del contenedor padre */
+    position: absolute;
+}
+
+.forms {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.formulario {
+    width: 40%;
+    height: 50%;
+    background: white;
+    border-radius: 0.4rem;
+    display: flex;
+    flex-direction: column;
+    padding: 2em;
+
+}
+
+.texto_contacto{
+    text-align: center;
+    font-size: xx-large;
+    margin-bottom: 5px;
+}
+
+.form__input{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: medium;
+    padding: 5px 5px;
+    outline: none;
+    border: solid 1.5px lightgray;
+    border-radius: 3px;
+    margin-bottom: 1%;
+}
+
+.form__input--msje{
+    resize: none;
+    padding: 5px 5px;
+    margin-bottom: 5px;
+}
+
+.form_boton{
+    background-color: lightgray;
+    font-size: large;
+    color: white;
+    border: none;
+    padding: 5px 5px;
+    font-weight: 350;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 3%;  
+}
+
+.envios_content{
+    display: flex;
+    height: 75vh;
+    align-content: center;
+    justify-content: center;
+    place-items: center;
+}
+
+.nosotros{ 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 45%;
+    border:  solid 2px red
+}
+
+.nosotros h2{
+    margin-bottom: 10PX;
+    padding: 30px;
+    border:  solid 2px red
+}
+
+.nosotros h2{
+    font: bold;
+    margin-bottom: 10PX;
+    padding: 30px;
+    border:  solid 2px red
+}
+
+
+
+section{
+    display: flex;
+    height: 60vw;
+    justify-content: center;
+    align-items: center;
+}
+
