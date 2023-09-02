@@ -47,6 +47,7 @@ footer{
 section{
     display: flex;
     height: 70%;
+    width: 100%;
     justify-content: center;
     align-items: center;
 }
@@ -103,7 +104,7 @@ section{
 
 .forms {
     height: 80vh;
-    width: 50%;
+    width: 30%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -112,8 +113,7 @@ section{
 
 .formulario {
     display: flex;
-    width: 40%;
-    height: 50%;
+    width: 100%;
     background: white;
     border-radius: 0.4rem;
     justify-content: center;
@@ -124,15 +124,17 @@ section{
 
 .texto_contacto{
     text-align: center;
+    justify-content: center;
     font-size: xx-large;
-    margin-bottom: 5px;
+    margin-bottom: 4%;
 }
 
 .form__input{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     font-size: medium;
-    padding: 5px 5px;
+    width: 100%;
+    padding: 2%;
     outline: none;
     border: solid 1.5px lightgray;
     border-radius: 3px;
@@ -141,8 +143,8 @@ section{
 
 .form__input--msje{
     resize: none;
-    padding: 5px 5px;
-    margin-bottom: 5px;
+    padding: 2%;
+    width: 100%;
 }
 
 .form_boton{
