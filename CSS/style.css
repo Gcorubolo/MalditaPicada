@@ -1,34 +1,38 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     display: flex;
+    flex-wrap: wrap;
     height: 100vh;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
+    /* align-content:center; */
     flex-direction: column;
-    font: normal;
-    background-image: none, url(../Imagenes/fondo_oscuro.jpg);
+    background-image: url(../Imagenes/fondo2_page.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
-header{
-    width: 100%;
-    height: 20%;
 
+header{
+    width: 100vw;
+    height: 20%;
 }
 
 .header{
     background: rgba(255, 255, 0, 0.86);
+    display: flex;
     width: 100vw;
-    padding-bottom: 0%;
+    align-items: center;
     text-align: center;
     justify-content: center;
-    align-content: center;
     height: 15%;
+    font-size: medium;
 }
 
 footer{
@@ -36,11 +40,12 @@ footer{
     text-align: center;
     justify-content: center;
     text-align: center;
-    background-color: white;
+    align-items: center;
+    background-color: rgb(0, 0, 0);
     height: 10%;
     bottom: 0; /* Alinea el footer en la parte inferior */
     width: 100%; /* Ancho del footer igual al 100% del contenedor padre */
-    position: absolute;
+    position: relative;
 
 }
 
@@ -50,6 +55,7 @@ section{
     width: 100%;
     justify-content: center;
     align-items: center;
+
 }
 
 
@@ -64,12 +70,11 @@ section{
 .menu {
     display: flex;
     background-color: black;
-    height: 100%;
+    height: 85%;
     width: 100%;
     margin: auto;
     justify-content: space-between;
     align-items: center;
-    padding: 0 15px;
 
 }
 
@@ -78,13 +83,12 @@ section{
 .menu ul {
     list-style: none; /* Quitamos los puntos de la lista */
     display: flex; /* Utilizamos flexbox para alinear los elementos horizontalmente */
-    margin: 0;
-    padding: 0;
+    padding: 0 20px;
 }
 
 .menu li {
     display: flex;
-    padding: 25px 10px; /* Espaciado vertical dentro de cada elemento */
+    padding: 0 20px; /* Espaciado vertical dentro de cada elemento */
     list-style: none;
     align-items: center; /* Alinea verticalmente el contenido del elemento */
     line-height: 100px; /* Centra verticalmente el contenido del elemento */
@@ -93,7 +97,6 @@ section{
 .menu a {
     color: white; /* Color del texto */
     text-decoration: none; /* Sin subrayado en los enlaces */
-    margin-left: 20px; /* Espaciado entre elementos */ 
 }
 
 .menu a:hover { color: yellow;} /* Cambia el color del texto al pasar el cursor por encima */
@@ -179,26 +182,43 @@ section{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     flex-direction: column;
-    width: 45%;
+    width: 60%;
     border:  solid 2px red
 }
 
 .nosotros h2{
-    margin-bottom: 10PX;
-    padding: 30px;
+    display: flex;
+    font-size: x-large;
+    padding: 20px;
+    border:  solid 2px red;
+}
+
+.productos{ 
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    width: 80%;
     border:  solid 2px red
 }
 
-.nosotros h2{
-    font: bold;
-    margin-bottom: 10PX;
-    padding: 30px;
-    border:  solid 2px red
+.productos h2{
+    display: flex;
+    font-size: x-large;
+    padding: 20px;
+    border:  solid 2px red;
 }
-
 
 
 #verzonas{
-    text-decoration: none
+    text-decoration: none;
+    padding-left: 5px;
+}
+
+footer p{
+    color: white;
 }
