@@ -216,11 +216,13 @@ section{
 .productos{ 
     color: white;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     align-items: center;
     text-align: center;
-    flex-direction: column;
+    flex-direction: row;
     width: 80%;
+    height: 70%;
     border:  solid 2px red
 }
 
@@ -232,6 +234,7 @@ section{
 }
 
 
+
 #verzonas{
     text-decoration: none;
     padding-left: 5px;
@@ -240,3 +243,4 @@ section{
 footer p{
     color: white;
 }
+
