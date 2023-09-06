@@ -211,8 +211,7 @@ section{
     border:  solid 2px red;
 }
 
-.productos{ 
-    color: white;
+/* .productos{ 
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -222,9 +221,29 @@ section{
     flex-direction: row;
     width: 80%;
     height: 70%;
-    border:  solid 2px red
+} */
+
+.productos {
+    display: flex; /* Utiliza flexbox para centrar y separar las imágenes */
+    justify-content: center; /* Centra horizontalmente las imágenes */
+    gap: 5%; /* Agrega un espacio entre las imágenes */
+    align-items: center; /* Centra verticalmente las imágenes */
+    width: 80%;
+    height: 70%;
 }
 
+.productos a {
+    text-align: center; /* Centra el contenido horizontalmente */
+    display: block; /* Convierte los enlaces en elementos de bloque */
+}
+
+.productos img {
+    margin: 0;
+    padding: 0;
+    width: 70%;
+    height: 100%; /* Mantiene la proporción de aspecto original de las imágenes */
+    border: solid 10px black;
+}
 
 #verzonas {
     text-decoration: none;
